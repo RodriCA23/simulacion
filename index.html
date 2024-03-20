@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="codigo2.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Generacion de variables aleatorias discretas</title>
+</head>
+    <STYLE>A {text-decoration: none;} </STYLE>
+<body class="bg-black ">
+    
+    <header>
+        <nav class="nav nav-pills flex-column flex-sm-row mt-2">
+            <a class="flex-sm-fill text-sm-center nav-link " aria-current="page" href="continuas.html">CONTINUAS</a>
+            <a class="flex-sm-fill text-sm-center nav-link active"  href="#">DISCRETAS</a>
+          </nav>
+          
+    </header>
+    <div class="container-fluid  text-light mt-4 py-3 rounded-2 text-center"> 
+        <div class="mb-3 text-center">
+            <h1>Método de la transformada inversa</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <div class="mb-3">
+                        <h3>Lambda</h3>
+                        <div class="input-group mb-3">
+                            <input type="number"  aria-describedby="button" class="form-control" id="lambda" placeholder="Ingrese un numero entre 0 y 1" >
+                            <button class="btn btn-outline-warning" onclick="lambda()" id="button">Eliminar</button>
+                        </div>
+                        
+                    </div>
+                    <div class="mb-3">
+                        <h3>Repetir</h3>
+                        <div class="input-group mb-3">
+                            <input type="number" aria-describedby="button" class="form-control" id="rep" placeholder="Ingrese un numero">
+                            <button class="btn btn-outline-warning" onclick="rep()" id="button">Eliminar</button>
+                        </div>
+                        
+                    </div>
+                    <div class="">
+                        <button class="btn btn-outline-primary" onclick="transformada()">Calcular</button>
+                    </div>
+                    <div class=" mt-4">
+                        <button class="btn btn-outline-danger" onclick="limpiar()">Limpiar</button>
+                    </div>
+                    <div class="mt-4">
+                        <p id="x1"></p>
+                    </div>
+                   
+                
+            </div>
+            <div class="col-md-7">
+                <div class="container mt-1 py-3  rounded-2" id="result">
+                    <h2>Numeros Generados</h2>
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
+                                <th id="nom1" >x</th>
+                                <th id="nom1">x</th>
+                                <th id="nom1">x</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contenido">
+                        </tbody>
+                    </table>
+                    <h2>Prueba Poker</h2>
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
+                                <th id="nom1"></th>
+                                <th id="nom2">FO</th>
+                                <th id="nom1">PE</th>
+                                <th id="nom1">FE</th>
+                            </tr>
+                        </thead>
+                        <tbody id="probabilidades">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Más proyectos</h4>
+              <ul class="list-unstyled">
+                <li><a href="index2.html"><i class="bi bi-box"></i> Cuadrados medios</a></li>
+                <li><a href="productosMedios.html"><i class="bi bi-x-square"></i> Productos medios</a></li>
+                <li><a href="modificado.html"><i class="bi bi-x-octagon"></i> Productos medio modificado</a></li>
+                <li><a href="neuman.html"><i class="bi bi-emoji-neutral"></i> Neumann</a></li>
+              </ul>
+              
+            </div>
+            <div class="col-md-4">
+              <h4></h4>
+              
+              <ul class="list-unstyled">
+                <li><a href="congruencial.html"><i class="bi bi-c-square"></i> Congruencial</a></li>
+                <li><a href="aditivo.html"><i class="bi bi-plus-circle-fill"></i> Congruencial aditivo</a></li>
+                <li><a href="multiplicativo.html"><i class="bi bi-grip-horizontal"></i> Conguencial multiplicativo</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Repositorios</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://github.com/RodriCA23?tab=repositories"><i class="bi bi-github"></i> GitHub</a></li>
+              </ul>
+              <h4>Donar</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://www.paypal.com/donate/?hosted_button_id=U94T5PGQG4QN8"><i class="bi bi-paypal"></i> PayPal</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="border-top text-center mt-4">
+          <p><i class="bi bi-google"></i></p>
+        </div>
+      </footer>
+      
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    
+</body>
+</html>

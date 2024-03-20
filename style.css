@@ -1,0 +1,143 @@
+header {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  nav {
+    float:left;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    background: #283da4;
+  }
+/*.capas{
+  position: absolute; z-index: 0;
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  padding: 90px 20px 0;
+}
+.header{
+  background-color: rgb(6, 6, 6);
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.nav{
+  display: flex;
+  justify-content:space-around;
+
+  max-width: 992px;
+  margin: 0 auto;
+}
+.nav-link{
+  color: white;
+  text-decoration: none;
+}
+.nav-menu{
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+.nav-menu-item{
+  font-size: 12px;
+  margin: 0 2px;
+  line-height: 80px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  width: max-content;
+}
+.nav-menu-link{
+  padding: 4px 2px;
+  border-radius: 3px;
+}
+.nav-menu-link:hover,
+.nav-menu-link_active{
+  background-color: #5d740300;
+  transition: 0.5s;
+}
+
+.nav-toggle{
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+}
+
+@media(max-width:768px){
+  body{
+    padding-top: 70px;
+  }
+  .header{
+    
+    height: 60px;
+    
+  }
+  .nav{
+    
+    justify-content:right;
+  
+  }
+  .nav-menu{
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2px;
+    background-color: #d81e1e;
+    position:fixed;
+    
+    left: 0;
+    top: 50px;
+    width: 100%;
+    padding: 20px 0;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+  .nav-menu-item{
+    line-height: 40px;
+    
+  }
+ 
+  .nav-menu-link:hover,
+  .nav-menu-link_active{
+    background: none;
+    color: #83c5f7;
+  }
+  .nav-toggle{
+    display: block;
+  }
+  .nav-menu_visible{
+    left: 0;
+  }
+}*/
